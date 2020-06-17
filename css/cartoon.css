@@ -1,0 +1,749 @@
+body>div {
+    width: 11%;
+    height: 420px;
+    /* 绝对定位 */
+    position: absolute;
+    top: 160px;
+    z-index: 1000;
+    background-color: #F8F9FB;
+}
+
+article {
+    width: 1040px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#m {
+    height: 520px;
+}
+
+#m ul {
+    width: 600px;
+    position: absolute;
+    top: 72px;
+    right: 95px;
+}
+
+#m ul li:hover img {
+    /* 向元素应用 2D 或 3D 转换 */
+    transform: scale(1.15);
+    /* 过渡 */
+    transition: all 0.5s;
+}
+
+#m nav {
+    color: green;
+    font-weight: lighter;
+    font-size: 25px;
+    /* 转换为行内块元素 */
+    display: inline-block;
+}
+
+#m nav,
+img {
+    vertical-align: middle;
+}
+
+#m>img {
+    display: block;
+    width: 300px;
+    position: absolute;
+}
+
+#m>img:nth-of-type(1) {
+    /* 绝对定位 */
+    position: absolute;
+    /* 动画模块 */
+    animation: a 1s forwards 3s;
+    /* 设置元素的堆叠顺序 */
+    z-index: 60;
+}
+
+#m>img:nth-of-type(2) {
+    position: absolute;
+    animation: a 1s forwards 6s;
+    z-index: 59;
+}
+
+#m>img:nth-of-type(3) {
+    position: absolute;
+    animation: a 1s forwards 9s;
+    z-index: 58;
+}
+
+#m>img:nth-of-type(4) {
+    position: absolute;
+    animation: a 1s forwards 12s;
+    z-index: 57;
+}
+
+#m>img:nth-of-type(6) {
+    position: absolute;
+    animation: a 1s forwards 18s;
+    z-index: 55;
+}
+
+#m>img:nth-of-type(7) {
+    position: absolute;
+    animation: a 1s forwards 21s;
+    z-index: 54;
+}
+
+#m>img:nth-of-type(8) {
+    position: absolute;
+    animation: a 1s forwards 24s;
+    z-index: 53;
+}
+
+#m>img:nth-of-type(9) {
+    position: absolute;
+    animation: a 1s forwards 24s;
+    z-index: 52;
+}
+
+#m>img:nth-of-type(10) {
+    position: absolute;
+    animation: a 1s forwards 24s;
+    z-index: 51;
+}
+
+#m>img:nth-of-type(11) {
+    position: absolute;
+    animation: a 1s forwards 27s;
+    z-index: 50;
+}
+
+#m>img:nth-of-type(12) {
+    position: absolute;
+    animation: a 1s forwards 30s;
+    z-index: 49;
+}
+
+#m>img:nth-of-type(13) {
+    position: absolute;
+    animation: a 1s forwards 33s;
+    z-index: 48;
+}
+
+#m>img:nth-of-type(14) {
+    position: absolute;
+    animation: a 1s forwards 36s;
+    z-index: 47;
+}
+
+#m>img:nth-of-type(15) {
+    position: absolute;
+    animation: a 1s forwards 39s;
+    z-index: 46;
+}
+
+#m>img:nth-of-type(16) {
+    position: absolute;
+    animation: a 1s forwards 42s;
+    z-index: 45;
+}
+
+#m>img:nth-of-type(17) {
+    position: absolute;
+    animation: a 1s forwards 45s;
+    z-index: 44;
+}
+
+#m>img:nth-of-type(18) {
+    position: absolute;
+    animation: a 1s forwards 48s;
+    z-index: 43;
+}
+
+#m>img:nth-of-type(19) {
+    position: absolute;
+    animation: a 1s forwards 51s;
+    z-index: 42;
+}
+
+#m>img:nth-of-type(20) {
+    position: absolute;
+    animation: a 1s forwards 54s;
+    z-index: 41;
+}
+
+#m>img:nth-of-type(21) {
+    position: absolute;
+    animation: a 1s forwards 57s;
+    z-index: 40;
+}
+
+#m>img:nth-of-type(22) {
+    position: absolute;
+    animation: a 1s forwards 60s;
+    z-index: 39;
+}
+
+#m>img:nth-of-type(23) {
+    position: absolute;
+    animation: a 1s forwards 63s;
+    z-index: 38;
+}
+
+#m>img:nth-of-type(24) {
+    position: absolute;
+    animation: a 1s forwards 66s;
+    z-index: 37;
+}
+
+#m>img:nth-of-type(25) {
+    position: absolute;
+    animation: a 1s forwards 69s;
+    z-index: 36;
+}
+
+#m>img:nth-of-type(26) {
+    position: absolute;
+    animation: a 1s forwards 72s;
+    z-index: 35;
+}
+
+#m>img:nth-of-type(27) {
+    position: absolute;
+    animation: a 1s forwards 75s;
+    z-index: 34;
+}
+
+#m>img:nth-of-type(28) {
+    position: absolute;
+    animation: a 1s forwards 78s;
+    z-index: 33;
+}
+
+#m>img:nth-of-type(29) {
+    position: absolute;
+    animation: a 1s forwards 81s;
+    z-index: 32;
+}
+
+#m>img:nth-of-type(30) {
+    position: absolute;
+    animation: a 1s forwards 84s;
+    z-index: 31;
+}
+
+#m>img:nth-of-type(31) {
+    position: absolute;
+    animation: a 1s forwards 87s;
+    z-index: 30;
+}
+
+#m>img:nth-of-type(32) {
+    position: absolute;
+    animation: a 1s forwards 90s;
+    z-index: 29;
+}
+
+#m>img:nth-of-type(33) {
+    position: absolute;
+    animation: a 1s forwards 93s;
+    z-index: 28;
+}
+
+#m>img:nth-of-type(34) {
+    position: absolute;
+    animation: a 1s forwards 95s;
+    z-index: 27;
+}
+
+#m>img:nth-of-type(35) {
+    position: absolute;
+    animation: a 1s forwards 98s;
+    z-index: 26;
+}
+
+#m>img:nth-of-type(36) {
+    position: absolute;
+    animation: a 1s forwards 101s;
+    z-index: 25;
+}
+
+#m>img:nth-of-type(37) {
+    position: absolute;
+    animation: a 1s forwards 104s;
+    z-index: 24;
+}
+
+#m>img:nth-of-type(38) {
+    position: absolute;
+    animation: a 1s forwards 107s;
+    z-index: 23;
+}
+
+#m>img:nth-of-type(39) {
+    position: absolute;
+    animation: a 1s forwards 110s;
+    z-index: 22;
+}
+
+#m>img:nth-of-type(40) {
+    position: absolute;
+    animation: a 1s forwards 113s;
+    z-index: 21;
+}
+
+#m>img:nth-of-type(41) {
+    position: absolute;
+    animation: a 1s forwards 116s;
+    z-index: 20;
+}
+
+#m>img:nth-of-type(42) {
+    position: absolute;
+    animation: a 1s forwards 119s;
+    z-index: 19;
+}
+
+#m>img:nth-of-type(43) {
+    position: absolute;
+    animation: a 1s forwards 122s;
+    z-index: 18;
+}
+
+#m>img:nth-of-type(44) {
+    position: absolute;
+    animation: a 1s forwards 125s;
+    z-index: 17;
+}
+
+#m>img:nth-of-type(45) {
+    position: absolute;
+    animation: a 1s forwards 128s;
+    z-index: 16;
+}
+
+#m>img:nth-of-type(46) {
+    position: absolute;
+    animation: a 1s forwards 131s;
+    z-index: 15;
+}
+
+#m>img:nth-of-type(47) {
+    position: absolute;
+    animation: a 1s forwards 134s;
+    z-index: 14;
+}
+
+#m>img:nth-of-type(48) {
+    position: absolute;
+    animation: a 1s forwards 137s;
+    z-index: 13;
+}
+
+#m>img:nth-of-type(49) {
+    position: absolute;
+    animation: a 1s forwards 140s;
+    z-index: 12;
+}
+
+#m>img:nth-of-type(50) {
+    position: absolute;
+    animation: a 1s forwards 143s;
+    z-index: 11;
+}
+
+#m>img:nth-of-type(51) {
+    position: absolute;
+    animation: a 1s forwards 146s;
+    z-index: 10;
+}
+
+#m>img:nth-of-type(52) {
+    position: absolute;
+    animation: a 1s forwards 149s;
+    z-index: 9;
+}
+
+#m>img:nth-of-type(53) {
+    position: absolute;
+    animation: a 1s forwards 152s;
+    z-index: 8;
+}
+
+#m>img:nth-of-type(54) {
+    position: absolute;
+    animation: a 1s forwards 155s;
+    z-index: 7;
+}
+
+#m>img:nth-of-type(55) {
+    position: absolute;
+    animation: a 1s forwards 158s;
+    z-index: 6;
+}
+
+#m>img:nth-of-type(56) {
+    position: absolute;
+    animation: a 1s forwards 161s;
+    z-index: 5;
+}
+
+#m>img:nth-of-type(57) {
+    position: absolute;
+    animation: a 1s forwards 164s;
+    z-index: 4;
+}
+
+#m>img:nth-of-type(58) {
+    position: absolute;
+    animation: a 1s forwards 167s;
+    z-index: 3;
+}
+
+#m>img:nth-of-type(59) {
+    position: absolute;
+    animation: a 1s forwards 170s;
+    z-index: 2;
+}
+
+#m>img:nth-of-type(60) {
+    position: absolute;
+    animation: a 1s forwards 173s;
+    z-index: 1;
+}
+
+@keyframes a {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1000px;
+    }
+}
+
+#m li span {
+    font-size: 12px;
+    color: gray;
+    display: inline-block;
+}
+
+#m li nav {
+    font-size: 15px;
+    display: inline-block;
+}
+
+#m li {
+    width: 150px;
+    list-style: none;
+    display: inline-block;
+    border-radius: 8px;
+    position: relative;
+    clear: left;
+    margin: 0px;
+    padding: 8px;
+}
+
+#m a {
+    text-decoration: none;
+    color: green;
+}
+
+#m a:hover {
+    color: orange;
+}
+
+#m li img {
+    width: 110px;
+}
+
+#n h2 {
+    color: royalblue;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+#n li img {
+    height: 180px;
+}
+
+#n li span {
+    font-size: 14px;
+    color: royalblue;
+    display: inline-block;
+}
+
+#n li nav {
+    font-size: 12px;
+    color: gray;
+    display: inline-block;
+}
+
+#n li {
+    width: 200px;
+    list-style: none;
+    display: inline-block;
+    border-radius: 8px;
+    position: relative;
+    clear: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#n li div {
+    height: 180px;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#n li:hover div {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#n a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+#n a:hover {
+    color: orange;
+}
+
+#n p {
+    font-size: 12px;
+    color: gray;
+}
+
+#o h2 {
+    color: darkorchid;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+#o img {
+    width: 250px;
+}
+
+#o li {
+    width: 300px;
+    list-style: none;
+    display: inline-block;
+    border-radius: 8px;
+    position: relative;
+    clear: left;
+    margin: 0px;
+    padding: 10px;
+}
+
+#o li:hover img {
+    transform: translate(0px, -12px);
+}
+
+#o span {
+    font-size: 16px;
+}
+
+#o a {
+    text-decoration: none;
+}
+
+#o a:hover {
+    color: orange;
+}
+
+#o li nav {
+    font-size: 12px;
+    color: gray;
+    display: inline-block;
+}
+
+#p li {
+    width: 220px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+#p img {
+    width: 215px;
+    padding: 2px;
+}
+
+#p p {
+    font-size: 25px;
+    color: lightpink;
+    font-weight: lighter;
+}
+
+#p span {
+    font-size: 12px;
+    color: gray;
+    display: inline-block;
+}
+
+#p li span:nth-of-type(1) {
+    position: absolute;
+    top: 270px;
+    color: white;
+    left: 12px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 210px;
+    height: 20px;
+    padding-left: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#p li:hover span:nth-of-type(1) {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 80px;
+    top: 210px;
+    white-space: pre-wrap;
+}
+
+#p li span:nth-of-type(2) {
+    font-size: 16px;
+    color: black;
+}
+
+#p ul li:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#p li img {
+    border-radius: 8px;
+}
+
+#p h1 img {
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+#q {
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+#q span {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #373B3C;
+    line-height: 12px;
+    text-align: center;
+}
+
+#q li div img {
+    width: 150px;
+    padding: 10px;
+}
+
+#q p {
+    font-size: 12px;
+    color: gray;
+    width: 160px;
+    height: 50px;
+}
+
+#q div a {
+    font-size: 15px;
+    color: gray;
+}
+
+#q ul li {
+    list-style-type: none;
+}
+
+#q a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#q li div {
+    display: none;
+}
+
+#q li:hover div {
+    display: block;
+}
+
+#q a:hover {
+    color: #E9185A;
+}
+
+#q a:hover span {
+    background: #E9185A;
+}
+
+#q h2 {
+    color: #E9185A;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+aside ul {
+    position: fixed;
+    right: 2%;
+    top: 40%;
+    border: 1px solid #979797;
+    border-radius: 40px;
+    padding: 20px 0px;
+    opacity: 0.8;
+}
+
+aside ul li {
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    line-height: 30px;
+}
+
+aside ul li:hover {
+    background-color: #FD4C86;
+}
+
+aside ul li:hover a {
+    color: #FFFFFF;
+}
+
+aside a:nth-of-type(1) img {
+    position: fixed;
+    bottom: -7px;
+    left: -7px;
+    transition: all 0.3s;
+}
+
+aside a:nth-of-type(1):hover img {
+    bottom: 0px;
+    left: 0px;
+    cursor: url("../image/img60.cur"), pointer;
+}
+
+aside a:nth-of-type(2) img {
+    position: fixed;
+    bottom: -7px;
+    right: -7px;
+    transition: all 0.3s;
+}
+
+aside a:nth-of-type(2):hover img {
+    bottom: 0px;
+    right: 0px;
+    cursor: url("../image/img60.cur"), pointer;
+}

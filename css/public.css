@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 16px;
+    background-color: #F8F9FB;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #686868;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FD4C86;
+    cursor: pointer;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+}
+
+header #a {
+    width: 1040px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 1000;
+}
+
+header #a #b img {
+    float: left;
+    height: 40px;
+    margin: 10px 45px 10px 0px;
+}
+
+header #a #c {
+    float: left;
+}
+
+header #a #c li {
+    float: left;
+    margin: 0px 23px;
+    line-height: 60px;
+}
+
+header #a #d {
+    float: left;
+}
+
+header #a #d input {
+    width: 170px;
+    height: 32px;
+    float: left;
+    border: 1px solid #D3D5D6;
+    border-radius: 32px;
+    line-height: 32px;
+    text-indent: 1.2em;
+    outline: none;
+    margin: 13px 0px 12px 110px;
+}
+
+header #a #d dl {
+    position: absolute;
+    top: 50px;
+    right: 252px;
+    width: 153px;
+    height: 287px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(255, 192, 203, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+}
+
+header #a #d:hover dl {
+    display: block;
+}
+
+header #a #d dl dt {
+    padding: 9px;
+    border-bottom: 1px solid #F1F1F1;
+    font-size: 12px;
+    color: #686868;
+}
+
+header #a #d dl dd {
+    line-height: 23px;
+    padding-left: 9px;
+}
+
+header #a #d dl dd:hover {
+    background-color: #fddef3;
+    cursor: pointer;
+}
+
+header #a #d dl dd:hover a {
+    color: #FD4C86;
+}
+
+header #a #d dl a {
+    font-size: 12px;
+}
+
+header #a #e img:first-of-type {
+    position: absolute;
+    top: 20px;
+    right: 265px;
+}
+
+header #a #e img:last-of-type {
+    position: absolute;
+    top: 20px;
+    right: 265px;
+    display: none;
+}
+
+header #a #e:hover img:last-of-type {
+    display: block;
+}
+
+header #a #f {
+    float: right;
+}
+
+header #a #f li {
+    float: left;
+    line-height: 60px;
+    margin: 0px 0px 0px 20px;
+    font-size: 14px;
+}
+
+header #a #f li:last-of-type {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FD4C86;
+    margin-top: 10px;
+    border-radius: 40px;
+    text-indent: 3.7em;
+}
+
+header #a #f li:last-of-type:hover {
+    background-color: #fb3b7b;
+}
+
+header #a #f li:first-of-type a {
+    color: #FD4C86;
+}
+
+header #a #f li:last-of-type a {
+    color: #ffffff;
+}
+
+header #a #g img {
+    position: absolute;
+    top: 16px;
+    right: 86px;
+}
+
+footer {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+    background-image: url("../image/img54.png");
+    border-top: 1px solid #f8f8f8;
+}
+
+footer #h {
+    width: 1000px;
+    height: 274px;
+    margin: 0px auto;
+    font-size: 12px;
+    color: #7f7f7f;
+}
+
+footer #h #i {
+    float: left;
+    width: 400px;
+    height: 194px;
+    padding-top: 20px;
+}
+
+footer #h h6 {
+    border-left: 1px solid #CCCCCC;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0px 0px 0px 14px;
+    color: #4d4d4d;
+}
+
+footer #h p {
+    margin: 9px 0px 0px 14px;
+}
+
+footer #h p:nth-of-type(1) {
+    margin: 14px 0px 0px 14px;
+}
+
+footer #h p a {
+    margin-right: 14px;
+}
+
+footer #h p a img {
+    width: 20px;
+}
+
+footer #h p a img, span {
+    vertical-align: middle;
+}
+
+footer #h #j {
+    float: right;
+    width: 600px;
+    height: 122px;
+    padding-top: 20px;
+}
+
+footer #h ul {
+    float: left;
+    padding: 8px 0px 0px 14px;
+}
+
+footer #h ul li {
+    float: left;
+    line-height: 26px;
+    width: 80px;
+}
+
+footer #h #k {
+    width: 155px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 15px;
+    padding: 30px 0px 30px 0px;
+}
+
+footer #h #k a img {
+    width: 34px;
+    float: left;
+    margin-right: 10px;
+}
+
+footer #h #k a span {
+    color: #7f7f7f;
+    float: left;
+    width: 110px;
+}
+
+footer #h #k a span:hover {
+    color: #FD4C86;
+}
+
+footer #h #l {
+    float: left;
+    width: 1000px;
+    height: 194px;
+}

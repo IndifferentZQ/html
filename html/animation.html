@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>动漫</title>
+    <link rel="shortcut icon" href="../logo.ico">
+    <link rel="stylesheet" href="../css/public.css" />
+</head>
+<style>
+    .left {
+        width: 696px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .left li {
+        transition: all 0.5s linear;
+    }
+    
+    .left li:hover {
+        transform: scale(1.1);
+    }
+    
+    .left a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .left,
+    .right {
+        float: left;
+    }
+    
+    .right {
+        width: 340px;
+        display: inline-block;
+        margin-top: 35px;
+    }
+    
+    .right ul li {
+        clear: left;
+    }
+    
+    .right .big {
+        overflow: hidden;
+    }
+    
+    .right a:hover {
+        color: blue;
+        transform: scale(1.5);
+    }
+    
+    .right a {
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .right p:nth-of-type(2) {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .right p:hover {
+        transform: scale(1.2) translate(32px, 0px);
+        background-color: pink;
+        border-radius: 12px;
+    }
+    
+    .left ul:nth-of-type(1) {
+        width: 698px;
+        list-style: none;
+        float: left;
+    }
+    
+    .right ul:nth-of-type(1) {
+        width: 698px;
+        list-style: none;
+        float: left;
+    }
+    
+    .left ul:nth-of-type(2) li {
+        width: 147px;
+        float: left;
+        margin: 8px;
+    }
+    
+    .right ul:nth-of-type(2) li {
+        width: 147px;
+        float: left;
+        margin: 8px;
+    }
+    
+    .left ul:nth-of-type(2) li:hover {
+        transform: scale(1.1);
+    }
+    
+    .right ul:nth-of-type(2) li:hover {
+        transform: scale(1.1);
+    }
+    
+    .left ul li img {
+        width: 147px;
+        height: 204px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    
+    .left ul:nth-of-type(1) li {
+        float: left;
+        margin: 10px;
+    }
+    
+    .right ul:nth-of-type(1) li {
+        float: left;
+        margin: 10px;
+    }
+    
+    .a1 {
+        background-color: orange;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+    
+    .left ul li img+p {
+        font-size: 12px;
+    }
+    
+    .right ul li a span {
+        width: 20px;
+        line-height: 20px;
+        border-radius: 10px;
+        display: block;
+        background-color: pink;
+        text-align: center;
+    }
+    
+    .o h3 {
+        float: left;
+    }
+    
+    .o p {
+        float: right;
+    }
+    
+    .o {
+        background-color: lightblue;
+    }
+    
+    .big {
+        width: 1040px;
+        margin: 0px auto;
+    }
+    
+    aside ul {
+        position: fixed;
+        right: 2%;
+        top: 40%;
+        border: 1px solid #979797;
+        border-radius: 40px;
+        padding: 20px 0px;
+        opacity: 0.8;
+    }
+    
+    aside ul li {
+        text-align: center;
+        height: 30px;
+        width: 40px;
+        line-height: 30px;
+    }
+    
+    aside ul li:hover {
+        background-color: #FD4C86;
+    }
+    
+    aside ul li:hover a {
+        color: #FFFFFF;
+    }
+    
+    aside a:nth-of-type(1) img {
+        position: fixed;
+        bottom: -7px;
+        left: -7px;
+        transition: all 0.3s;
+    }
+    
+    aside a:nth-of-type(1):hover img {
+        bottom: 0px;
+        left: 0px;
+        cursor: url("image/img60.cur"), pointer;
+    }
+    
+    aside a:nth-of-type(2) img {
+        position: fixed;
+        bottom: -7px;
+        right: -7px;
+        transition: all 0.3s;
+    }
+    
+    aside a:nth-of-type(2):hover img {
+        bottom: 0px;
+        right: 0px;
+        cursor: url("image/img60.cur"), pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="a">
+            <a href="#" id="b"><img src="../image/img01.png" alt="" /></a>
+            <ul id="c">
+                <li><a href="../first.html">首页</a></li>
+                <li><a href="animation.html" style="color: #FD4C86">动漫</a></li>
+                <li><a href="cartoon.html">漫画</a></li>
+                <li><a href="game.html">游戏</a></li>
+            </ul>
+            <div id="d">
+                <input type="text" placeholder="海贼王" />
+                <dl>
+                    <dt>今日热搜</dt>
+                    <dd><a href="#">1.火影忍者</a></dd>
+                    <dd><a href="#">2.吃鸡</a></dd>
+                    <dd><a href="#">3.凹凸世界</a></dd>
+                    <dd><a href="#">4.生存游戏</a></dd>
+                    <dd><a href="#">5.overload</a></dd>
+                    <dd><a href="#">6.王者荣耀</a></dd>
+                    <dd><a href="#">7.刺客伍六七第二季</a></dd>
+                    <dd><a href="#">8.一拳超人</a></dd>
+                    <dd><a href="#">9.漫画</a></dd>
+                    <dd><a href="#">10.七龙珠</a></dd>
+                </dl>
+            </div>
+            <a href="" id="e">
+                <img src="../image/img02.png" alt="" />
+                <img src="../image/img03.png" alt="" />
+            </a>
+            <ul id="f">
+                <li><a href="registe.html">登录/注册</a></li>
+                <li><a href="">我要发帖</a></li>
+            </ul>
+            <a href="" id="g"><img src="../image/img04.png" alt="" /></a>
+        </div>
+    </header>
+    <article>
+        <div class="big">
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="#"><img src="../image/1.png" alt="">
+                            <p>刀剑神域 爱丽丝篇 异界战争</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/2.png" alt="">
+                            <p>黑色四叶草</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../image/3.png" alt="">
+                            <p>DARLING in the FRANXX</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/4.png" alt="">
+                            <p>无限系统树</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/5.png" alt="">
+                            <p>航海王：狂热行动</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/6.png" alt="">
+                            <p>爆肝工程师的异世界狂想曲</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/7.png" alt="">
+                            <p>食戟之灵 第5季</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/8.png" alt="">
+                            <p>武庚纪</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/9.png" alt="">
+                            <p>西行纪</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/10.png" alt="">
+                            <p>斗破苍穹第三季</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/11.png" alt="">
+                            <p>魔道祖师</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../image/12.png" alt="">
+                            <p>全职高手2</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="o">
+                <h3>热门</h3>
+                <p>全部&nbsp;&nbsp;&nbsp;原创</p>
+                <div class="right">
+                    <ul>
+                        <li><a href=""><span>1</span><p>纱雾：再说我和你奶奶一个发色，胸都给你打瘪<p><p>综合评分：9.8</p></a></li><br>
+                        <li><a href=""><span>2</span><p>【鬼灭之刃】我妻善逸的千层套路</p><p>综合评分：8.7</p></a></li>
+                        <li><a href=""><span>3</span><p>【七日之都手书】「哪怕不得回报，徒劳而终。」-Hydra-</p><p>综合评分：9.5</p></a></li>
+                        <li><a href=""><span>4</span><p>刺客伍六七番外篇：刺杀罗小黑</p></a></li>
+                        <li><a href=""><span>5</span><p>【催泪向MAD】butter-fly (主MIX) 【数码宝贝】 【超然】</p></a></li>
+                        <li><a href=""><span>6</span><p>【手书】明日方舟X高达W OP(附对比) </p></a></li>
+                        <li><a href=""><span>7</span><p>【2019霜月祭MAD大赛】最终日 迈向远方</p></a></li>
+                        <li><a href=""><span>8</span><p>【7月】OVERLORD 第三季 12【独家正版】</p></a></li>
+                        <li><a href=""><span>9</span><p>我琢磨了两个半月 最终发现了《哪吒之魔童降世》的正确打开方式</p></a></li>
+                        <li><a href=""><span>10</span><p>【4月】转生成为了只有乙女游戏破灭Flag的邪恶大小姐</p></a></li>
+                    </ul>
+                </div>
+        </div>
+        <aside>
+            <a href="#bottom"><img src="../image/img58.png" alt="" /></a>
+            <a href="#top"><img src="../image/img59.png" alt="" /></a>
+        </aside>
+    </article>
+    <footer>
+        <div id="h">
+            <div id="l">
+                <div id="i">
+                    <h6>关于我们</h6>
+
+                    <p><a href="#">申请认证</a><a href="">联系我们</a><a href="">负责声明</a><a href="">未成年人家长监护工程</a><a href="">账号注销</a>
+                    </p>
+
+                    <p><a href="#">广告合作：xxxxxxxxxx@qq.com</a></p>
+
+                    <p>
+                        <a href="#"><img src="../image/img55.png" alt="" /><span>沪网文[2020]0000-000号</span></a><a href="#"><span>沪ICP备00000000号-0</span></a>
+                    </p>
+
+                    <p>
+                        <a href="#"><img src="../image/img56.png" alt="" /><span>沪公网安备 00000000000000号</span></a>
+                    </p>
+
+                    <p><a href="#">举报邮箱：xxxxxxxxxx@qq.com</a></p>
+
+                    <p><a href="#">举报电话：0000-00000000</a></p>
+                </div>
+                <div id="j">
+                    <h6>友情链接</h6>
+                    <ul>
+                        <li><a href="#">樱花动漫</a></li>
+                        <li><a href="#">网易游戏</a></li>
+                        <li><a href="#">SF轻小说</a></li>
+                        <li><a href="#">网易漫画</a></li>
+                        <li><a href="#">轻文轻小说</a></li>
+                        <li><a href="#">腾讯动漫</a></li>
+                        <li><a href="#">猫耳FM</a></li>
+                        <li><a href="#">知音漫客网</a></li>
+                        <li><a href="#">漫客栈</a></li>
+                        <li><a href="#">零界点</a></li>
+                        <li><a href="#">轻之文库</a></li>
+                        <li><a href="#">快看漫画</a></li>
+                        <li><a href="#">bilibili</a></li>
+                        <li><a href="#">KilaKila</a></li>
+                        <li><a href="#">看看二次元</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="k">
+                <a href="#" name="bottom">
+                    <img src="../image/img57.png" /><span>上海互联网举报中心</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

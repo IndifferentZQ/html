@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404! Opps! Page not found</title>
+    <style>
+        * {
+            margin: 0;
+            /*外边距*/
+            padding: 0;
+            /*内边距*/
+            box-sizing: border-box;
+            /*盒子大小规则*/
+            font-family: sans-serif;
+            /*字体:非衬线*/
+        }
+        
+        body {
+            background: linear-gradient(45deg, #8500ff, #5acaff);
+            /*背景颜色渐变*/
+            height: 100vh;
+            /*高度：100视窗*/
+        }
+        
+        #container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            /*弹性盒模型*/
+            justify-content: center;
+            /*主轴对齐方式*/
+            align-items: center;
+            /*交叉轴对齐方式*/
+            background: url('../image/background.jpg') black;
+            background-size: cover;
+            /*背景图片，颜色*/
+            /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); */
+            /*背景阴影*/
+        }
+        
+        #container .content {
+            max-width: 600px;
+            /*最大宽度*/
+            text-align: center;
+            /*字体行居中*/
+        }
+        /* vw/vh视口单位 */
+        
+        #container .content h2 {
+            font-size: 18vw;
+            color: #fff;
+            line-height: 1em;
+        }
+        
+        #container .content h4 {
+            position: relative;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #111;
+            background: #fff;
+            font-weight: 300;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        
+        #container .content p {
+            color: #fff;
+            font-size: 1.2em;
+        }
+        
+        #container .content a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 25px;
+            background: #ff0562;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 25px;
+            border-radius: 25px;
+            border-bottom: 4px solid #d00d56;
+            /*下边框*/
+            user-select: none;
+        }
+    </style>
+
+
+    <body>
+        <div id='container'>
+            <div class='content'>
+                <h2>404</h2>
+                <h4>哇！页面没有找到</h4>
+                <p>
+                    点击下方返回首页
+                </p>
+                <a href="../index.html">
+                Back To Home
+            </a>
+            </div>
+        </div>
+</head>
+</body>
+
+</html>

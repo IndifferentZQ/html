@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>游戏</title>
+    <link rel="shortcut icon" href="../logo.ico">
+    <link rel="stylesheet" href="../css/public.css" />
+    <style type="text/css">
+        /* 清除默认样式 */
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        img {
+            /* 鼠标样式 */
+            cursor: pointer;
+        }
+        
+        a {
+            /* 去点链接下划线 */
+            text-decoration: none;
+            /* 鼠标样式 */
+            cursor: pointer;
+        }
+        
+        body {
+            font-size: 16px;
+            /* 背景颜色 */
+            background-color: #F8F9FB;
+            /* 相对定位 */
+            position: relative;
+        }
+        
+        .box {
+            width: 1005px;
+            margin: 0px auto;
+            background-color: #FFFFFF;
+        }
+        
+        .box #m {
+            float: left;
+        }
+        
+        .box #m li {
+            float: left;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        .box #m li:first-of-type {
+            background-color: pink;
+            color: white;
+        }
+        
+        .box #m li:last-of-type {
+            color: black;
+        }
+        
+        .box #n img {
+            width: 230px;
+            height: 180px;
+            border-radius: 15px;
+        }
+        
+        .box h3 {
+            clear: left;
+            height: 50px;
+            line-height: 50px;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        
+        .box #n {
+            float: left;
+        }
+        
+        .box #n li {
+            float: left;
+            margin: 0px 10px 0px 10px;
+        }
+        
+        .box #n a {
+            font-size: 12px;
+            color: gray;
+        }
+        
+        #o {
+            width: 1000px;
+            height: 200px;
+            border-bottom: 1px solid gray;
+        }
+        
+        #o img {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin-top: 40px;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        #c1 {
+            width: 1000px;
+            height: 200px;
+            border-bottom: 1px solid gray;
+        }
+        
+        #c1 img {
+            width: 120px;
+            height: 120px;
+            border-radius: 9px;
+            margin-top: 40px;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        #c2 {
+            width: 1000px;
+            height: 200px;
+            border-bottom: 1px solid gray;
+        }
+        
+        #c2 img {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin-top: 40px;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        #c3 {
+            width: 1000px;
+            height: 200px;
+            border-bottom: 1px solid gray;
+        }
+        
+        #c3 img {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin-top: 40px;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        #c4 {
+            border-bottom: 1px solid gray;
+            width: 1000px;
+            height: 200px;
+        }
+        
+        #c4 img {
+            width: 120px;
+            height: 120px;
+            border-radius: 29px;
+            margin-top: 40px;
+            float: left;
+            margin-left: 30px;
+        }
+        
+        table {
+            float: left;
+            margin-top: 55px;
+        }
+        
+        #ca1 td {
+            border: 1px solid #FF8C00;
+            display: inline-block;
+            border-radius: 8px;
+            margin-right: 5px;
+            color: #FF8C00
+        }
+        
+        #n li {
+            box-shadow: pink 0px 0px 2px;
+            border-radius: 15px;
+        }
+        
+        #n li:hover {
+            box-shadow: pink 0px 0px 8px;
+            border-radius: 15px;
+        }
+        
+        #ca2 {
+            font-size: 13px;
+            color: red;
+        }
+        
+        .box #p {
+            width: 1004px;
+        }
+        
+        .box #p img {
+            width: 1004px;
+            height: 565px;
+        }
+        
+        .box #p img:nth-of-type(1) {
+            position: absolute;
+            animation: a 1s forwards 5s;
+            z-index: 60;
+        }
+        
+        .box #p img:nth-of-type(2) {
+            position: absolute;
+            animation: a 1s forwards 10s;
+            z-index: 59;
+        }
+        
+        .box #p img:nth-of-type(3) {
+            position: absolute;
+            animation: a 1s forwards 15s;
+            z-index: 58;
+        }
+        
+        .box #p img:nth-of-type(4) {
+            position: absolute;
+            animation: a 1s forwards 20s;
+            z-index: 57;
+        }
+        
+        .box #p img:nth-of-type(5) {
+            position: absolute;
+            animation: a 1s forwards 25s;
+            z-index: 56;
+        }
+        
+        .box #p img:nth-of-type(6) {
+            position: absolute;
+            animation: a 1s forwards 30s;
+            z-index: 55;
+        }
+        
+        .box #p img:nth-of-type(7) {
+            position: absolute;
+            animation: a 1s forwards 35s;
+            z-index: 54;
+        }
+        
+        .box #p img:nth-of-type(8) {
+            position: absolute;
+            animation: a 1s forwards 40s;
+            z-index: 53;
+        }
+        
+        .box #p img:nth-of-type(9) {
+            position: absolute;
+            animation: a 1s forwards 45s;
+            z-index: 52;
+        }
+        
+        .box #p img:nth-of-type(10) {
+            position: absolute;
+            animation: a 1s forwards 50s;
+            z-index: 51;
+        }
+        
+        .box #p img:nth-of-type(11) {
+            position: absolute;
+            animation: a 1s forwards 55s;
+            z-index: 50;
+        }
+        
+        .box #p img:nth-of-type(12) {
+            position: absolute;
+            animation: a 1s forwards 60s;
+            z-index: 49;
+        }
+        
+        .box #p img:nth-of-type(13) {
+            position: absolute;
+            animation: a 1s forwards 65s;
+            z-index: 48;
+        }
+        
+        .box #p img:nth-of-type(14) {
+            position: absolute;
+            animation: a 1s forwards 70s;
+            z-index: 47;
+        }
+        
+        .box #p img:nth-of-type(15) {
+            position: absolute;
+            animation: a 1s forwards 75s;
+            z-index: 46;
+        }
+        
+        .box #p img:nth-of-type(16) {
+            position: absolute;
+            animation: a 1s forwards 80s;
+            z-index: 45;
+        }
+        
+        .box #p img:nth-of-type(17) {
+            position: absolute;
+            animation: a 1s forwards 85s;
+            z-index: 44;
+        }
+        
+        .box #p img:nth-of-type(18) {
+            position: absolute;
+            animation: a 1s forwards 90s;
+            z-index: 43;
+        }
+        
+        .box #p img:nth-of-type(19) {
+            position: absolute;
+            animation: a 1s forwards 95s;
+            z-index: 42;
+        }
+        
+        .box #p img:nth-of-type(20) {
+            position: absolute;
+            animation: a 1s forwards 100s;
+            z-index: 41;
+        }
+        
+        .box #p img:nth-of-type(21) {
+            position: absolute;
+            animation: a 1s forwards 105s;
+            z-index: 40;
+        }
+        
+        .box #p img:nth-of-type(22) {
+            position: absolute;
+            animation: a 1s forwards 110s;
+            z-index: 39;
+        }
+        
+        .box #p img:nth-of-type(23) {
+            position: absolute;
+            animation: a 1s forwards 115s;
+            z-index: 38;
+        }
+        
+        .box #p img:nth-of-type(24) {
+            position: absolute;
+            animation: a 1s forwards 120s;
+            z-index: 37;
+        }
+        
+        .box #p img:nth-of-type(25) {
+            position: absolute;
+            animation: a 1s forwards 125s;
+            z-index: 36;
+        }
+        
+        .box #p img:nth-of-type(26) {
+            position: absolute;
+            animation: a 1s forwards 130s;
+            z-index: 35;
+        }
+        
+        .box #p img:nth-of-type(27) {
+            position: absolute;
+            animation: a 1s forwards 135s;
+            z-index: 34;
+        }
+        
+        .box #p img:nth-of-type(28) {
+            position: absolute;
+            animation: a 1s forwards 140s;
+            z-index: 33;
+        }
+        
+        .box #p img:nth-of-type(29) {
+            position: absolute;
+            animation: a 1s forwards 145s;
+            z-index: 32;
+        }
+        
+        .box #p img:nth-of-type(30) {
+            position: absolute;
+            animation: a 1s forwards 150s;
+            z-index: 31;
+        }
+        
+        .box #p img:nth-of-type(31) {
+            position: absolute;
+            animation: a 1s forwards 155s;
+            z-index: 30;
+        }
+        
+        .box #p img:nth-of-type(32) {
+            position: absolute;
+            animation: a 1s forwards 160s;
+            z-index: 29;
+        }
+        
+        .box #p img:nth-of-type(33) {
+            position: absolute;
+            animation: a 1s forwards 165s;
+            z-index: 28;
+        }
+        
+        .box #p img:nth-of-type(34) {
+            position: absolute;
+            animation: a 1s forwards 170s;
+            z-index: 27;
+        }
+        
+        .box #p img:nth-of-type(35) {
+            position: absolute;
+            animation: a 1s forwards 175s;
+            z-index: 26;
+        }
+        
+        .box #p img:nth-of-type(36) {
+            position: absolute;
+            animation: a 1s forwards 180s;
+            z-index: 25;
+        }
+        
+        .box #p img:nth-of-type(37) {
+            position: absolute;
+            animation: a 1s forwards 185s;
+            z-index: 24;
+        }
+        
+        .box #p img:nth-of-type(38) {
+            position: absolute;
+            animation: a 1s forwards 190s;
+            z-index: 23;
+        }
+        
+        .box #p img:nth-of-type(39) {
+            position: absolute;
+            animation: a 1s forwards 195s;
+            z-index: 22;
+        }
+        
+        .box #p img:nth-of-type(40) {
+            position: absolute;
+            animation: a 1s forwards 200s;
+            z-index: 21;
+        }
+        
+        .box #p img:nth-of-type(41) {
+            position: absolute;
+            animation: a 1s forwards 205s;
+            z-index: 20;
+        }
+        
+        .box #p img:nth-of-type(42) {
+            position: absolute;
+            animation: a 1s forwards 210s;
+            z-index: 19;
+        }
+        
+        .box #p img:nth-of-type(43) {
+            position: absolute;
+            animation: a 1s forwards 215s;
+            z-index: 18;
+        }
+        
+        .box #p img:nth-of-type(44) {
+            position: absolute;
+            animation: a 1s forwards 220s;
+            z-index: 17;
+        }
+        
+        .box #p img:nth-of-type(45) {
+            position: absolute;
+            animation: a 1s forwards 225s;
+            z-index: 16;
+        }
+        
+        .box #p img:nth-of-type(46) {
+            position: absolute;
+            animation: a 1s forwards 230s;
+            z-index: 15;
+        }
+        
+        .box #p img:nth-of-type(47) {
+            position: absolute;
+            animation: a 1s forwards 235s;
+            z-index: 14;
+        }
+        
+        .box #p img:nth-of-type(48) {
+            position: absolute;
+            animation: a 1s forwards 240s;
+            z-index: 13;
+        }
+        
+        .box #p img:nth-of-type(49) {
+            position: absolute;
+            animation: a 1s forwards 245s;
+            z-index: 12;
+        }
+        
+        .box #p img:nth-of-type(50) {
+            position: absolute;
+            animation: a 1s forwards 250s;
+            z-index: 11;
+        }
+        
+        .box #p img:nth-of-type(51) {
+            position: absolute;
+            animation: a 1s forwards 255s;
+            z-index: 10;
+        }
+        
+        .box #p img:nth-of-type(52) {
+            position: absolute;
+            animation: a 1s forwards 260s;
+            z-index: 9;
+        }
+        
+        .box #p img:nth-of-type(53) {
+            position: absolute;
+            animation: a 1s forwards 265s;
+            z-index: 8;
+        }
+        
+        .box #p img:nth-of-type(54) {
+            position: absolute;
+            animation: a 1s forwards 270s;
+            z-index: 7;
+        }
+        
+        .box #p img:nth-of-type(55) {
+            position: absolute;
+            animation: a 1s forwards 275s;
+            z-index: 6;
+        }
+        
+        .box #p img:nth-of-type(56) {
+            position: absolute;
+            animation: a 1s forwards 280s;
+            z-index: 5;
+        }
+        
+        .box #p img:nth-of-type(57) {
+            position: absolute;
+            animation: a 1s forwards 285s;
+            z-index: 4;
+        }
+        
+        .box #p img:nth-of-type(58) {
+            position: absolute;
+            animation: a 1s forwards 290s;
+            z-index: 3;
+        }
+        
+        .box #p img:nth-of-type(59) {
+            position: absolute;
+            animation: a 1s forwards 295s;
+            z-index: 2;
+        }
+        
+        .box #p img:nth-of-type(60) {
+            position: absolute;
+            animation: a 1s forwards 300s;
+            z-index: 1;
+        }
+        
+        @keyframes a {
+            100% {
+                left: -10000px;
+            }
+        }
+        
+        aside ul {
+            position: fixed;
+            right: 2%;
+            top: 40%;
+            border: 1px solid #979797;
+            border-radius: 40px;
+            padding: 20px 0px;
+            opacity: 0.8;
+        }
+        
+        aside ul li {
+            text-align: center;
+            height: 30px;
+            width: 40px;
+            line-height: 30px;
+        }
+        
+        aside ul li:hover {
+            background-color: #FD4C86;
+        }
+        
+        aside ul li:hover a {
+            color: #FFFFFF;
+        }
+        
+        aside a:nth-of-type(1) img {
+            position: fixed;
+            bottom: -7px;
+            left: -7px;
+            transition: all 0.3s;
+        }
+        
+        aside a:nth-of-type(1):hover img {
+            bottom: 0px;
+            left: 0px;
+            cursor: url("image/img60.cur"), pointer;
+        }
+        
+        aside a:nth-of-type(2) img {
+            position: fixed;
+            bottom: -7px;
+            right: -7px;
+            transition: all 0.3s;
+        }
+        
+        aside a:nth-of-type(2):hover img {
+            bottom: 0px;
+            right: 0px;
+            cursor: url("image/img60.cur"), pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="a">
+            <a href="#" id="b"><img src="../image/img01.png" alt="" /></a>
+            <ul id="c">
+                <li><a href="../first.html">首页</a></li>
+                <li><a href="animation.html">动漫</a></li>
+                <li><a href="cartoon.html">漫画</a></li>
+                <li><a href="game.html" style="color: #FD4C86">游戏</a></li>
+            </ul>
+            <div id="d">
+                <input type="text" placeholder="海贼王" />
+                <dl>
+                    <dt>今日热搜</dt>
+                    <dd><a href="#">火影忍者</a></dd>
+                    <dd><a href="#">2.吃鸡</a></dd>
+                    <dd><a href="#">3.凹凸世界</a></dd>
+                    <dd><a href="#">4.生存游戏</a></dd>
+                    <dd><a href="#">5.overload</a></dd>
+                    <dd><a href="#">6.王者荣耀</a></dd>
+                    <dd><a href="#">7.刺客伍六七第二季</a></dd>
+                    <dd><a href="#">8.一拳超人</a></dd>
+                    <dd><a href="#">9.漫画</a></dd>
+                    <dd><a href="#">10.七龙珠</a></dd>
+                </dl>
+            </div>
+            <a href="" id="e">
+                <img src="../image/img02.png" alt="" />
+                <img src="../image/img03.png" alt="" />
+            </a>
+            <ul id="f">
+                <li><a href="registe.html">登录/注册</a></li>
+                <li><a href="">我要发帖</a></li>
+            </ul>
+            <a href="" id="g"><img src="../image/img04.png" alt="" /></a>
+        </div>
+    </header>
+    <!-- css3轮播图 -->
+    <article>
+        <div class="box">
+            <div id="p">
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+                <img src="../image/img63.jpg" alt="" />
+                <img src="../image/img64.jpg" alt="" />
+                <img src="../image/img62.jpg" alt="" />
+            </div>
+            <ul id="m">
+                <li>游戏中心</li>
+                <li>游戏版区</li>
+            </ul>
+            <h3>今日推荐</h3>
+            <ul id="n">
+                <li><img src="../image/myrzx封面.jpg">
+
+                    <h3>牧羊人之心</h3><a href="#">124764人正在讨论>></a></li>
+                <li><img src="../image/封面1.jpg">
+
+                    <h3>阴阳师</h3><a href="#">106875人正在讨论>></a></li>
+                <li><img src="../image/sglms.jpg">
+
+                    <h3>三国罗曼史</h3><a href="#">4546人正在讨论>></a></li>
+                <li><img src="../image/sb.jpg">
+
+                    <h3>Fate/Grend Order</h3><a href="#">141302人正在讨论>></a></li>
+            </ul>
+            <h3>精品排行</h3>
+
+            <div id="o">
+                <img src="../image/bh3.jpg" alt="">
+                <table>
+                    <tr>
+                        <td colspan="4">崩坏 3 热门</td>
+                    </tr>
+                    <tr id="ca1">
+                        <td>动作</td>
+                        <td>崩坏学院</td>
+                        <td>国创动漫</td>
+                        <td>米哈游</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">游戏介绍：为世界上所有的美好而战</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" id="ca2">版区论坛326706人正在讨论该游戏</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="c1">
+                <img src="../image/sb封面.jpg" alt="">
+                <table>
+                    <tr>
+                        <td colspan="4">Fate/Grend Order</td>
+                    </tr>
+                    <tr id="ca1">
+                        <td>策略</td>
+                        <td>卡片</td>
+                        <td colspan="2">日式</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">游戏介绍：陈坤代言，Fate系列首款正版手游</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" id="ca2">版区论坛141302人正在讨论该游戏</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="c2">
+                <img src="../image/神乐.jpg" alt="">
+                <table>
+                    <tr>
+                        <td colspan="5">阴阳师</td>
+                    </tr>
+                    <tr id="ca1">
+                        <td>和风</td>
+                        <td>半即时</td>
+                        <td>回合制</td>
+                        <td>RPG</td>
+                        <td>剧情控</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">游戏介绍：阴阳师官方正版手游</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" id="ca2">版区论坛106875人正在讨论该游戏</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="c3">
+                <img src="../image/snkfq.jpg" alt="">
+                <table>
+                    <tr>
+                        <td colspan="2">少女咖啡枪</td>
+                    </tr>
+                    <tr id="ca1">
+                        <td>3D</td>
+                        <td>萌娘</td>
+                        <td>射击</td>
+                        <td>养成</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">游戏介绍：我的妹妹不可能拯救世界吧！</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" id="ca2">版区论坛37861人正在讨论该游戏</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="c4">
+                <img src="../image/ygxy.jpg" alt="">
+                <table>
+                    <tr>
+                        <td colspan="4">依格效应</td>
+                    </tr>
+                    <tr id="ca1">
+                        <td>卡牌</td>
+                        <td>职人</td>
+                        <td>依格效应</td>
+                        <td>北岛行德</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">游戏介绍：“职人×卡牌×群像剧”手游《伊格效应》事前登录开启，你的选择将拯救职人的命运！</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" id="ca2">版区论坛13965人正在讨论该游戏</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <aside>
+            <a href="#bottom"><img src="../image/img58.png" alt="" /></a>
+            <a href="#top"><img src="../image/img59.png" alt="" /></a>
+        </aside>
+    </article>
+    <footer>
+        <div id="h">
+            <div id="l">
+                <div id="i">
+                    <h6>关于我们</h6>
+
+                    <p><a href="#">申请认证</a><a href="">联系我们</a><a href="">负责声明</a><a href="">未成年人家长监护工程</a><a href="">账号注销</a>
+                    </p>
+
+                    <p><a href="#">广告合作：xxxxxxxxxx@qq.com</a></p>
+
+                    <p>
+                        <a href="#"><img src="../image/img55.png" alt="" /><span>沪网文[2020]0000-000号</span></a><a href="#"><span>沪ICP备00000000号-0</span></a>
+                    </p>
+
+                    <p>
+                        <a href="#"><img src="../image/img56.png" alt="" /><span>沪公网安备 00000000000000号</span></a>
+                    </p>
+
+                    <p><a href="#">举报邮箱：xxxxxxxxxx@qq.com</a></p>
+
+                    <p><a href="#">举报电话：0000-00000000</a></p>
+                </div>
+                <div id="j">
+                    <h6>友情链接</h6>
+                    <ul>
+                        <li><a href="#">樱花动漫</a></li>
+                        <li><a href="#">网易游戏</a></li>
+                        <li><a href="#">SF轻小说</a></li>
+                        <li><a href="#">网易漫画</a></li>
+                        <li><a href="#">轻文轻小说</a></li>
+                        <li><a href="#">腾讯动漫</a></li>
+                        <li><a href="#">猫耳FM</a></li>
+                        <li><a href="#">知音漫客网</a></li>
+                        <li><a href="#">漫客栈</a></li>
+                        <li><a href="#">零界点</a></li>
+                        <li><a href="#">轻之文库</a></li>
+                        <li><a href="#">快看漫画</a></li>
+                        <li><a href="#">bilibili</a></li>
+                        <li><a href="#">KilaKila</a></li>
+                        <li><a href="#">看看二次元</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="k">
+                <a href="#" name="bottom">
+                    <img src="../image/img57.png" alt="" /><span>上海互联网举报中心</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

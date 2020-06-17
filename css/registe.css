@@ -1,0 +1,66 @@
+
+article {
+    width: 1040px;
+    margin: 0px auto;
+    position: relative;
+}
+
+article div {
+    height: 400px;
+}
+
+article form {
+    margin: 0px auto;
+    width: 430px;
+    height: 320px;
+    background-color: white;
+    box-shadow: pink 0px 0px 2px;
+}
+
+article form p:nth-of-type(1) {
+    padding: 20px 0px 20px 50px;
+}
+
+article form input {
+    width: 300px;
+    height: 35px;
+    margin: 10px 0px 10px 60px;
+    border-radius: 10px;
+    border: none;
+}
+
+article form input[type=radio] {
+    width: 14px;
+    height: 14px;
+}
+
+article form p:nth-of-type(4) {
+    width: 360px;
+    margin: 10px 0px 10px 0px;
+}
+
+article form p span {
+    float: right;
+}
+
+article form p span:hover {
+    text-decoration: underline;
+}
+
+article form p:nth-of-type(5) a input:nth-of-type(1) {
+    width: 100px;
+    border-radius: 40px;
+    background-color: #FD4C86;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+article form p:nth-of-type(5) a input:nth-of-type(2) {
+    width: 100px;
+    border-radius: 40px;
+    background-color: #FD4C86;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
